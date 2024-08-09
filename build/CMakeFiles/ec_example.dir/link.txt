@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/ec_example.dir/src/main.cpp.o CMakeFiles/ec_example.dir/src/ec_curve.cpp.o CMakeFiles/ec_example.dir/src/ec_elgamal.cpp.o -o ec_example  /usr/lib/x86_64-linux-gnu/libcrypto.so 

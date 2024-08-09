@@ -1,5 +1,0 @@
-/home/jgao76/ecc-openssl/build/CMakeFiles/ec_example.dir
-/home/jgao76/ecc-openssl/build/CMakeFiles/test_curve.dir
-/home/jgao76/ecc-openssl/build/CMakeFiles/test_elgamal.dir
-/home/jgao76/ecc-openssl/build/CMakeFiles/edit_cache.dir
-/home/jgao76/ecc-openssl/build/CMakeFiles/rebuild_cache.dir
