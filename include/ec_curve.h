@@ -8,6 +8,12 @@
 #include <string>
 #include <vector>
 #include <cstring>
+#include <iostream>
+
+enum PointConversionForm {
+    COMPRESSED,
+    UNCOMPRESSED
+};
 
 void handleErrors();
 
@@ -24,20 +30,16 @@ EC_POINT* multiply_point(const EC_GROUP* group, const EC_POINT* point, const BIG
 EC_POINT* add_points(const EC_GROUP* group, const EC_POINT* point1, const EC_POINT* point2);
 
 // Function to print an EC_POINT
-void print_point(const EC_GROUP* group, const EC_POINT* point);
+void print_point(const EC_GROUP* group, const EC_POINT* point, PointConversionForm form);
 
-// Function to convert EC_POINT to a vector of byte
-std::vector<unsigned char> ec_point_to_octet_string(const EC_GROUP* group, const EC_POINT* point);
+// Function to convert EC_POINT to a vector of bytes
+std::vector<unsigned char> ec_point_to_octet_string(const EC_GROUP* group, const EC_POINT* point, PointConversionForm form);
 
-// Function to convert a vector of byte to EC_POINT
+// Function to convert a vector of bytes to EC_POINT
 EC_POINT* octet_string_to_ec_point(const EC_GROUP* group, const std::vector<unsigned char>& buffer);
 
 // Conversion in batch
-std::vector<unsigned char> batch_serialize_ec_points(const EC_GROUP *group, const std::vector<EC_POINT*> &points);
-
+std::vector<unsigned char> batch_serialize_ec_points(const EC_GROUP *group, const std::vector<EC_POINT*> &points, PointConversionForm form);
 std::vector<EC_POINT*> batch_deserialize_ec_points(const EC_GROUP *group, const std::vector<unsigned char> &buffer);
-
-
-
 
 #endif // EC_EXAMPLE_H

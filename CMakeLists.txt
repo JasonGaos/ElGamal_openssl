@@ -17,8 +17,8 @@ set(SOURCES
 )
 
 # Main executable
-add_executable(ec_example src/main.cpp ${SOURCES})
-target_link_libraries(ec_example OpenSSL::Crypto)
+add_executable(main src/main.cpp ${SOURCES})
+target_link_libraries(main OpenSSL::Crypto)
 
 # Test executable
 add_executable(test_curve test/test_curve.cpp ${SOURCES})
