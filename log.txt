@@ -1,0 +1,29 @@
+
+Testing performance for secp256r1 (NIST P-256) with Uncompressed format...
+Size of serialized point (Uncompressed): 65 bytes
+Average point multiplication time: 0.0438229 ms per iteration.
+Average point addition time: 0.00116376 ms per iteration.
+Average serialization time (Uncompressed): 0.00376905 ms per iteration.
+Average deserialization time (Uncompressed): 0.00115058 ms per iteration.
+
+Testing performance for secp256r1 (NIST P-256) with Compressed format...
+Size of serialized point (Compressed): 33 bytes
+Average point multiplication time: 0.0440521 ms per iteration.
+Average point addition time: 0.00128635 ms per iteration.
+Average serialization time (Compressed): 0.00403627 ms per iteration.
+Average deserialization time (Compressed): 0.0193736 ms per iteration.
+
+Testing ElGamal encryption with Uncompressed format...
+Average encryption time: 0.0902496 ms
+Average serialization time: 0.00883111 ms
+Average deserialization time: 0.00313328 ms
+Average decryption time: 0.0452254 ms
+Ciphertext size (Uncompressed): 130 bytes
+
+Testing ElGamal encryption with Compressed format...
+Average encryption time: 0.0875042 ms
+Average serialization time: 0.00845037 ms
+Average deserialization time: 0.0383819 ms
+Average decryption time: 0.0439504 ms
+Ciphertext size (Compressed): 66 bytes
+
